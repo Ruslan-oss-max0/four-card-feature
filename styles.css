@@ -1,0 +1,167 @@
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  --grey-dark: hsl(234, 12%, 34%);
+  --grey-light: hsl(212, 6%, 44%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Poppins, sans-serif;
+    color: var(--grey-light);
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.header-main {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--grey-dark);
+}
+
+.tools {
+    display: flex;
+    gap: 50px;
+}
+
+.section {
+    display: flex;
+    padding: 25px;
+    width: 400px;
+    height: 250px;
+    box-shadow: 0 4px 6px var(--grey-light);
+    border-radius: 5px;
+}
+
+.section-link {
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+/* #region Supervisor */
+
+.supervisor {
+    border-top: 4px solid var(--cyan);
+}
+
+.supervisor-title {
+    color: var(--grey-dark);
+}
+
+.supervisor-content {
+    font-size: 14px;
+}
+
+.supervisor-img {
+    background-image: url(./images/icon-supervisor.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-self: flex-end;
+}
+
+/* #endregion */
+
+/* #region Team Builder */
+
+.team-builder {
+    border-top: 4px solid var(--red);
+}
+
+.team-builder-title {
+    color: var(--grey-dark);
+}
+
+.team-builder-content {
+    font-size: 14px;
+}
+
+.team-builder-img {
+    background-image: url(./images/icon-team-builder.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-self: flex-end;
+    width: 80px;
+    height: 80px;
+}
+
+/* #endregion */
+
+/* #region Karma */
+
+.karma {
+    border-top: 4px solid var(--orange);
+}
+
+.karma-title {
+    color: var(--grey-dark);
+}
+
+.karma-content {
+    font-size: 14px;
+}
+
+.karma-img {
+    background-image: url(./images/icon-karma.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    align-self: flex-end;
+}
+
+/* #endregion */
+
+/* #region Calculator */
+
+.calculator {
+    border-top: 4px solid var(--blue);
+}
+
+.calculator-title {
+    color: var(--grey-dark);
+}
+
+.calculator-content {
+    font-size: 14px;
+}
+
+.calculator-img {
+    background-image: url(./images/icon-calculator.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    align-self: flex-end;
+    width: 80px;
+    height: 80px;
+}
+
+/* #endregion */
